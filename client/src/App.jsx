@@ -414,7 +414,7 @@ const getClassStatus = (selectedTimetable) => {
 
 
           <h1>
-            ITS Engineering College Test.
+            ITS Engineering College.
             <br />
             <span>Your Timetable.</span>
           </h1>
