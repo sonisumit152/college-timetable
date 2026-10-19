@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  height: 72px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e8ebf1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #182238;
+}
+
+.logo-icon {
+  font-size: 25px;
+}
+
+.staff-btn {
+  padding: 10px 18px;
+  border: 1px solid #dfe3eb;
+  border-radius: 8px;
+  background: white;
+  color: #27334d;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.staff-btn:hover {
+  background: #f5f7fb;
+}
+
+
+/* ================= HOME PAGE ================= */
+
+.hero {
+  flex: 1;
+  padding: 65px 20px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 950px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 30px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: #172033;
+}
+
+h1 span {
+  color: #4f46e5;
+}
+
+.subtitle {
+  max-width: 650px;
+  margin: 20px auto 38px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #687386;
+}
+
+
+/* ================= SELECTION CARD ================= */
+
+.selection-card {
+  max-width: 900px;
+  margin: auto;
+  padding: 32px;
+  background: white;
+  border-radius: 18px;
+  text-align: left;
+  box-shadow: 0 12px 35px rgba(20, 30, 60, 0.08);
+  border: 1px solid #e8ebf1;
+}
+
+.selection-card h2 {
+  font-size: 23px;
+  color: #172033;
+}
+
+.card-subtitle {
+  margin-top: 7px;
+  margin-bottom: 27px;
+  color: #7a8495;
+  font-size: 14px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #46516a;
+}
+
+.input-group select {
+  width: 100%;
+  height: 48px;
+  padding: 0 13px;
+  border: 1px solid #dfe3eb;
+  border-radius: 9px;
+  background: white;
+  color: #303a50;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.input-group select:focus {
+  border-color: #4f46e5;
+}
+
+
+/* ================= BUTTON ================= */
+
+.view-btn {
+  width: 100%;
+  height: 52px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 9px;
+  background: #4f46e5;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.view-btn:hover {
+  background: #4338ca;
+}
+
+.view-btn span {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+
+/* ================= FEATURES ================= */
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 38px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  text-align: left;
+}
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #e8ebf1;
+  font-size: 19px;
+}
+
+.feature strong {
+  display: block;
+  font-size: 13px;
+  color: #303a50;
+}
+
+.feature p {
+  margin-top: 3px;
+  font-size: 11px;
+  color: #8a93a3;
+}
+
+
+/* ================= TIMETABLE PAGE ================= */
+
+.timetable-page {
+  flex: 1;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 45px 30px 55px;
+}
+
+
+/* HEADER */
+
+.timetable-header {
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  border: none;
+  background: transparent;
+  color: #4f46e5;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  color: #4338ca;
+}
+
+.timetable-title {
+  text-align: left;
+}
+
+.timetable-title .badge {
+  margin-bottom: 12px;
+}
+
+.timetable-title h1 {
+  font-size: 36px;
+  letter-spacing: -0.8px;
+}
+
+.timetable-title > p {
+  margin-top: 10px;
+  color: #717b8e;
+  font-size: 15px;
+}
+
+.room-info {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 9px 14px;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid #e3e7ef;
+  color: #46516a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* TABLE WRAPPER */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #e4e7ee;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(20, 30, 60, 0.07);
+}
+
+
+/* TABLE */
+
+.timetable {
+  width: 100%;
+  min-width: 1250px;
+  border-collapse: collapse;
+}
+
+.timetable th {
+  background: #f7f8fc;
+  color: #46516a;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 16px 10px;
+  border-bottom: 1px solid #e5e8ef;
+  border-right: 1px solid #edf0f5;
+  white-space: nowrap;
+}
+
+.timetable th:first-child {
+  width: 110px;
+}
+
+.timetable td {
+  min-width: 105px;
+  height: 90px;
+  padding: 12px 8px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #edf0f5;
+  border-bottom: 1px solid #edf0f5;
+  color: #303a50;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.timetable tr:last-child td {
+  border-bottom: none;
+}
+
+.timetable td:last-child,
+.timetable th:last-child {
+  border-right: none;
+}
+
+
+/* DAY */
+
+.timetable .day-cell {
+  min-width: 110px;
+  background: #f7f8fc;
+  color: #172033;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+
+/* BREAK / LUNCH */
+
+.timetable .break-cell {
+  background: #fafafa;
+  color: #8a93a3;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* HOVER */
+
+.timetable tbody tr:hover td {
+  background: #fafbff;
+}
+
+.timetable tbody tr:hover .day-cell {
+  background: #f1f3fa;
+}
+
+
+/* ================= INFO ================= */
+
+.timetable-note {
+  margin-top: 25px;
+  padding: 20px 22px;
+  background: white;
+  border: 1px solid #e5e8ef;
+  border-radius: 12px;
+}
+
+.timetable-note strong {
+  font-size: 14px;
+  color: #303a50;
+}
+
+.timetable-note p {
+  margin-top: 7px;
+  font-size: 13px;
+  color: #7a8495;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+  padding: 22px;
+  text-align: center;
+  background: white;
+  border-top: 1px solid #e8ebf1;
+  color: #8a93a3;
+  font-size: 12px;
+}
+
+footer p + p {
+  margin-top: 5px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 750px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .staff-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .selection-card {
+    padding: 22px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-left: 20px;
+  }
+
+  .timetable-page {
+    padding: 30px 15px 40px;
+  }
+
+  .timetable-title h1 {
+    font-size: 28px;
+  }
+
+  .table-container {
+    border-radius: 10px;
+  }
+
+}
+/* ================= CURRENT / NEXT CLASS ================= */
+
+.class-status {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 18px;
+  padding: 14px 18px;
+  background: white;
+  border: 1px solid #e4e7ee;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(20, 30, 60, 0.06);
+}
+
+.status-icon {
+  font-size: 22px;
+}
+
+.status-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.status-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #7a8495;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-content strong {
+  font-size: 14px;
+  color: #172033;
+  white-space: pre-line;
+}
+
+.status-time {
+  font-size: 12px;
+  color: #687386;
+}
+
+.class-status.current {
+  border-left: 4px solid #22c55e;
+}
+
+.class-status.next {
+  border-left: 4px solid #3b82f6;
+}
+
+.class-status.break {
+  border-left: 4px solid #f59e0b;
+}
+
+.class-status.none {
+  border-left: 4px solid #94a3b8;
+}
